@@ -1,0 +1,28 @@
+<div id="app">
+  <div class="calculator">
+    <div class="header">
+      <div  class="header__screen">
+        <div  #formula class="formula"></div>
+        <div  #display id="display">0</div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button (click)='Number(7)' class="button number" value="7">7</button>
+      <button (click)='Number(8)' class="button number" value="8">8</button>
+      <button (click)='Number(9)' class="button number" value="9">9</button>
+      <button (click)='Reset()' class="button button--red">AC</button>
+      <button (click)='Number(4)' class="button number" value="4">4</button>
+      <button (click)='Number(5)' class="button number" value="5">5</button>
+      <button (click)='Number(6)' class="button number" value="6">6</button>
+      <button (click)='Operation("div","/")'  class="button op" value="/">/</button>
+      <button (click)='Number(1)' class="button number" value="1">1</button>
+      <button (click)='Number(2)' class="button number" value="2">2</button>
+      <button (click)='Number(3)' class="button number" value="3">3</button>
+      <button (click)='Operation("mul","*")' class="button op" value="*">*</button>
+      <button (click)='Number(0)' class="button number" value="0">0</button>
+      <button (click)='Undo()' class="button" value="UNDO">undo</button>
+      <button (click)='Operation("add","+")' class="button op" value="+">+</button>
+      <button (click)='Operation("sub","-")' class="button op" value="-">-</button>
+      <button (click)='equals()' class="button button--full res" value="=">=</button></div>
+  </div>
+</div>
